@@ -1,6 +1,6 @@
 # Day 11 — Controlled Agent Security (2026)
 
-**Bài nộp cá nhân:** Nguyễn Nhựt Linh · MSSV **2A202603492** · Lớp **K5-L3A**.
+**Bài nộp cá nhân:** Nguyễn Nhựt Linh · MSSV **2A202603492** · Lớp **L3A**.
 
 Code và artifact đã hoàn thành CP2–CP4. Blue dùng OpenRouter
 `liquid/lfm-3-1.7b:free`; Red và Red Advance dùng OpenAI `gpt-4o-mini`.
