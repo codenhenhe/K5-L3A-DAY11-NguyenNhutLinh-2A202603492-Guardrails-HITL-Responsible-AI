@@ -1,5 +1,26 @@
 # Day 11 — Controlled Agent Security (2026)
 
+**Bài nộp cá nhân:** Nguyễn Nhựt Linh · MSSV **2A202603492** · Lớp **K5-L3A**.
+
+Code và artifact đã hoàn thành CP2–CP4. Blue dùng OpenRouter
+`liquid/lfm-3-1.7b:free`; Red và Red Advance dùng OpenAI `gpt-4o-mini`.
+Kết quả lần chạy CP4: Red leak 5/5 prompt; Red Advance chặn 5/5, không leak.
+Bằng chứng bonus B1 cần được grader replay xác nhận.
+
+Chạy từ thư mục gốc sau khi cấu hình `.env` theo `.env.example`:
+
+```bash
+source .venv/bin/activate
+python src/main.py --part 2
+python src/main.py --part 3
+python src/main.py --part 4
+pytest tests/smoke tests/public -q
+python scripts/grade.py --submission-dir . --out outputs/grade_report.json
+```
+
+Artifact bắt buộc: `outputs/results.json` và `outputs/attack_results.json`.
+Xem báo cáo tự sinh tại [`outputs/lab_report.md`](outputs/lab_report.md).
+
 > 👤 **Hình thức:** bài tập **cá nhân** (1 người / 1 MSSV).  
 > 🎯 **Mục tiêu:** đóng vai **Blue Team** để học cách xây Guardrails phòng thủ, rồi đóng vai **Red Team** để tấn công agent **Red** hoặc **Red Advance**.  
 > ✅ Làm theo **Checkpoint 1 → 5** trong [`CHECKPOINTS.md`](CHECKPOINTS.md) · nộp theo [`SUBMISSION.md`](SUBMISSION.md).
